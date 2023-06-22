@@ -6,8 +6,50 @@
 </head>
 
 <body>
-    <h1>Listas</h1>
-    <h2>Lista de compras</h2>
+    <h1>LISTAS</h1>
+    <h2>Funcionamento de links(ancora)</h2>
+    <ul>
+        <li>
+            <!-- indo diretamente para uma frase especifica -->
+            <a href="https://pt.wikipedia.org/wiki/LeBron_James#:~:text=homenageado%20como%20um%20dos%2075%20maiores%20jogadores%20da%20hist%C3%B3ria%20da%20NBA.%5B10%5D">link</a>
+        </li>
+        <li>
+            <a href="https://www.google.com/">Google</a>
+            <!-- Abre na mesma pagina -->
+        </li>
+        <li>
+            <a href="https://soulcode.com/" target="_blank">SoulCode</a>
+            <!-- Abre em outra pagina -->
+        </li>
+
+        <!-- Direcionar para um local do proprio site -->
+        <li>
+            <a href="#lista-compras">Lista de compras</a>
+        </li>
+        <li>
+            <a href="#receita-bolo">Receita de Bolo</a>
+        </li>        
+        <li>
+            <a href="#lista-animais">Lista de Animais</a>
+        </li>
+        <li>
+            <a href="#lista-explicativa">Lista Explicativa</a>
+        </li>
+        <!-- Chamar codigo de outra pastas -->
+        <li><a href="/atividade20-06-23/index.html">tag de texto</a></li>
+
+        <!-- chamar codigo da mesma pasta -->
+        <li>
+        <a href="detalhes.html">mais detalhes</a>
+        </li>
+        <li>
+            <a href="/atividade20-06-23/">todos</a>
+        </li>
+
+    </ul>
+
+
+    <h2 id="lista-compras">Lista de compras</h2>
 <!-- Lista não Ordenada -->
     <ul>
         <li>Leite</li>
@@ -18,7 +60,7 @@
     </ul>
     <br>
 <!-- Lista Ordenada -->
-    <h2>Receita de Bolo</h2>
+    <h2 id="receita-bolo">Receita de Bolo</h2>
     <ol>
         <li>Reserve 500g de Farinha de Trigo c/ fermento</li>
         <li>Reserve 1L de Leite</li>
@@ -32,7 +74,7 @@
     </ol>
     <br>
 <!-- Lista Aninhadas -->
-    <h2>Lista de Animais</h2>
+    <h2 id="lista-animais">Lista de Animais</h2>
     <ul>
         <li>
             Mamiferos
@@ -69,7 +111,7 @@
     </ul>
     <br>
 <!-- Lista de Descrição -->
-    <h2>Lista Explicativa</h2>
+    <h2 id="lista-explicativa">Lista Explicativa</h2>
     <dl>
         <dt>HTML</dt>
         <dd>É uma linguagem de marcação de hiper texto, aplicada para construçaõ esrutural de uma página web.</dd>
