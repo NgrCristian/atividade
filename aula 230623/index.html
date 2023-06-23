@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+
+<!-- tabelas em html -->
+<!-- tr=linha da tabela -->
+<!-- td=celula(coluna) da tabela -->
+<!-- th=titulo da col -->
+
+    <table border="1">
+        <colgroup>
+            <col style="width: 200px; background-color: rgb(88, 86, 245);">
+            <col style="width: 100px; background-color: rgb(122, 186, 251);">
+            <col style="width: 300px; background-color: rgb(172, 184, 235);">
+        </colgroup>
+        <tr>
+            <th>Nome</th> 
+            <th>Idade</th>
+            <th>E-mail </th>
+        </tr>
+
+        <tr>
+            <td>Maria maria</td>
+            <td>30 anos</td>
+            <td>maria@exemple.com.br</td>
+        </tr>
+
+        <tr>
+            <td>Joao joao</td>
+            <td>30 anos</td>
+            <td>joao@exemple.com.br</td>
+        </tr>
+    </table>
+
+
+    <h2>Tabela soma 2</h2>
+<!-- formula=tr*10>td*2{2 + 0 =} -->
+    <table border="1">
+        <tr>
+            <th>Operação</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>2 + 0 =</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>2 + 1 =</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2 + 2 =</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>2 + 3 =</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>2 + 4 =</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2 + 5 =</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>2 + 6 =</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>2 + 7 =</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>2 + 8 =</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>2 + 9 =</td>
+            <td>12</td>
+        </tr>
+    </table>
+<br>
+
+
+<h2>Tabuada 2</h2>
+    <table border="1">
+        <tr>
+            <th>Operação</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>2 * 0 =</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2 * 1 =</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>2 * 2 =</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>2 * 3 =</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2 * 4 =</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>2 * 5 =</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>2 * 6 =</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>2 * 7 =</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>2 * 8 =</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>2 * 9 =</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>2 * 10 =</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <h2>Times de futebol</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">Classificação Brasileirão</th>
+                <!-- colspan= mescla colunas(preenche todas as colunas selecionadas) -->
+                <!-- rowspan= mescla linhas(prenche todas as linhas selecionadas) -->
+                <!-- thead= caceçalho -->
+                <!-- tbody= corpo -->
+                <!-- tfoot= rodape -->
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <th>Pontos</th>
+                <th>Saldo de gols</th>
+                <th>Vitorias</th>
+            </tr>  
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Botafogo</td>
+            <td>27</td>
+            <td>12</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Palmeiras</td>
+            <td>22</td>
+            <td>13</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Gremio</td>
+            <td>20</td>
+            <td>1</td>
+            <td rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td>Flamengo</td>
+            <td>19</td>
+            <td>6</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <th colspan="4">
+                <a href="https://www.msn.com/pt-br/esportes/futebol/brasileirao-serie-a/posicoes?ocid=bingsports" target="_blank">Acesse nosso site Brasileirão</a>
+            </th>
+        </tr>
+        </tfoot>
+        
+    </table>
+</body>
+</html>
