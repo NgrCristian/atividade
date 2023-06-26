@@ -9,15 +9,78 @@
 
     <form>
         Nome:
-        <input type="text"> 
+        <input type="text" name="nome" placeholder="Digite o nome"> 
         <br>
+        
         E-mail:
-        <input type="email">
+        <input type="email" name="email" value="exemple@gmail.com">
         <br>
+        
         Senha
-        <input type="password">
+        <input type="password" name="senha">
+        <br>
+        
+        Idade:
+        <input type="number" name="idade">
+        <br>
+        
+        Data de Nascimento:
+        <input type="date" name="data">
+        <br>
+        
+        Telefone:
+        <input type="tel" name="telefone">
+        <br>
+
+        URL da foto:
+        <input type="url" name="url">
+        <br>
+
+        Frente RG:
+        <input type="file" name="foto">
+        <br>
+        Verso RG:
+        <input type="file" accept=".jpg, .png" multiple name="foto">
+        <br>
+
+        Escolha sua cor:
+        <input type="color" name="cor">
+        <br>
+
+        Horario de regisro:
+        <input type="time" value="12:00" disabled name="horario">
+        <br>
+
+        Estado Civil: <br>
+        Casado:<input type="radio" name="estado-civil"> <br>
+        Solteiro:<input type="radio" name="estado-civil">
+        <br>
+
+        Aceito os termos de uso:
+        <input type="checkbox" name="termos">
+        <br>
+
+        Nivel de Ingles:
+        1<input type="range" min="1" max="5" step="1" name="inlges">5
+        <br>
+
+        Estado:
+        <select name="estad0">
+            <option disabled selected>Selecione um estado</option>
+            <option>Sao Paulo</option>
+            <option>Bahia</option>
+            <option>Ceara</option>
+            <option>Rio de Janeiro</option>
+        </select>
+        <br>
+
+        Fale um Pouco sobre voce: <br>
+        <textarea cols="30" rows="5" placeholder="Digite aqui..."></textarea>
+        <br>
+
         <br>
         <button>Enviar</button>
+        <br>
     </form>
     
 </body>
