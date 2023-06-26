@@ -6,7 +6,7 @@
 </head>
 <body>
     <!-- value= indica o valor do campo -->
-    <!--  -->
+    <!-- pattern= define um padrão/modelo da informaçao -->
     <h1>Formularios</h1>
 
     <form>
@@ -19,15 +19,15 @@
         <br>
         
         Senha
-        <input type="password" name="senha">
+        <input type="password" name="senha" pa>
         <br>
         
         Idade:
-        <input type="number" name="idade">
+        <input type="number" name="idade" min="0" max="100">
         <br>
         
         Data de Nascimento:
-        <input type="date" name="data">
+        <input type="date" name="data" min="2023-06-26" max="2023-07-26">
         <br>
         
         Telefone:
@@ -77,11 +77,26 @@
         <br>
 
         Fale um Pouco sobre voce: <br>
-        <textarea cols="30" rows="5" placeholder="Digite aqui..."></textarea>
+        <textarea cols="30" rows="5" placeholder="Digite aqui... maximo de 100 caracteres" maxlength="100"></textarea>
         <br>
 
+        TESTE:
+        <input type="text" pattern="[0-9]{4,8}"> <br>
+        <!--PATTERN = [0-9] corresponde aos carateres que podem ser utilizados 
+        {4,8} intervalo ou quantidade min e max para inserir os caracteres -->
+
         <br>
-        <button>Enviar</button>
+        <button type="button">Nao faz nada no Html, apenas no js</button> <br>
+        <input type="button" value="nao faz nada">
+        <br>
+        <br>
+        <button type="reset">Limpar</button> <br>
+        <input type="reset" value="limpar">
+        <br>
+        <br>
+        <button type="submit">Enviar</button> <br>
+        <input type="submit" value="enviar">
+        <br>
         <br>
     </form>
     
