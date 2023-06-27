@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <h1>CADASTRE-SE</h1>
+
+    <form>
+        <fieldset>
+            <legend>Suas Informações</legend>
+
+            <label for="nome">Nome*</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" maxlength="200" required> 
+            <br>
+
+            <label for="email">E-mail*</label>
+            <input type="email" name="email" id="email" placeholder="Exemple@gmail.com" required>
+            <br>
+        
+            <label for="senha">Senha*</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <br>
+
+            <label for="senha">Confirme a Senha*</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha" required>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+        <label for="cidade">Cidade*</label>
+        <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade" required>
+        <br>
+
+        <label for="estado">UF*</label>
+        <select name="uf" required>
+            <option disabled selected>Selecione a UF</option>
+            <option>AC</option>
+            <option>AL</option>
+            <option>AM</option>
+            <option>AP</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>MG</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PR</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RS</option>
+            <option>RO</option>
+            <option>SC</option>
+            <option>SP</option>
+            <option>SE</option>
+            <option>TO</option>
+            <br>
+        </select>
+        <br>
+
+        <label for="rua">Rua*</label>
+        <input type="text" name="rua" id="rua" placeholder="Digite sua rua" required>
+        <br>
+
+        <label for="numero">Numero*</label>
+        <input type="text" name="numero" id="numero" placeholder="Digite o numero da casa" maxlength="10" required>
+        <br>
+
+        <label for="CEP">CEP*</label>
+        <input type="text" name="CEP" id="CEP" placeholder="Digite o CEP" min="8" max="9" required>
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Sobre Você</legend>
+
+        <label for="bio">Biografia*</label><br>
+        <textarea cols="30" rows="5" placeholder="Digite aqui... maximo de 200 caracteres" maxlength="200" required></textarea>
+        <br>
+
+        <label for="area-de-atuaçao">Área de atuação*</label> <br>
+        Fullstack:<input type="radio" name="area-de-atuaçao" required>
+        Cloud:<input type="radio" name="area-de-atuaçao" required>
+        Ambos: <input type="radio" name="area-de-atuaçao" required>
+
+    </fieldset>
+
+<br>
+        <button type="reset">LIMPAR</button>
+        <button type="submit">ENVIAR</button>
+
+    </form>
+</body>
+</html>
